@@ -1,22 +1,18 @@
 [
   {
     "id": 1,
-    "nome": "Gol",
-    "marca": "Volkswagen",
-    "ano": 2014,
-    "preco": 35000,
-    "km": 120000,
+    "nome": "Onix Turbo",
+    "marca": "Chevrolet",
+    "ano": 2023,
+    "preco": 85000,
+    "km": 15000,
     "combustivel": "Flex",
-    "cambio": "Manual",
+    "cambio": "Automático",
     "cor": "Prata",
     "status": "disponível",
-    "imagens": [
-      "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.555.jpeg",
-    "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.533.jpeg",
-    "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.53.jpeg"],
+    "imagens": ["/imagens/onix.jpg"],
     "descricao": "Onix LT 1.0 Turbo, completo, econômico."
-  }
-],
+  },
   {
     "id": 2,
     "nome": "Golf GTI",
