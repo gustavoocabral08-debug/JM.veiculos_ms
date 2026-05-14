@@ -1,16 +1,19 @@
 [
   {
     "id": 1,
-    "nome": "Onix Turbo",
-    "marca": "Chevrolet",
-    "ano": 2023,
-    "preco": 85000,
-    "km": 15000,
+    "nome": "Gol",
+    "marca": "Volkswagen",
+    "ano": 2014,
+    "preco": 35000,
+    "km": 120000,
     "combustivel": "Flex",
-    "cambio": "Automático",
+    "cambio": "Manual",
     "cor": "Prata",
     "status": "disponível",
-    "imagens": ["/imagens/onix.jpg"],
+    "imagens": [
+      "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.555.jpg",
+    "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.533.jpg",
+    "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.53.jpg"],
     "descricao": "Onix LT 1.0 Turbo, completo, econômico."
   },
   {
