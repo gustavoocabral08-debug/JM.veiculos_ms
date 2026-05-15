@@ -10,11 +10,7 @@
     "cambio": "Manual",
     "cor": "Prata",
     "status": "disponível",
-    "imagens": [
-      "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.555.jpeg",
-      "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.533.jpeg",
-      "/imagens/WhatsApp%20Image%202026-05-13%20at%2011.00.53.jpeg"
-    ],
+    "imagens": ["https://drive.google.com/uc?id=1P4bpBFcw1NafvgYKrMPUc1BVF-oIsEBY"],
     "descricao": "Onix LT 1.0 Turbo, completo, econômico."
   },
   {
