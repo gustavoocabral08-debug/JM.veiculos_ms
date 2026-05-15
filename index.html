@@ -8,44 +8,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { background-color: #0f172a !important; color: #e2e8f0 !important; }
+        
         .cinzel-text { font-family: 'Cinzel', serif; }
+        
         .toast { position: fixed; bottom: 20px; right: 20px; background: #10b981; color: white; padding: 12px 24px; border-radius: 8px; animation: slideIn 0.3s ease; z-index: 1000; }
         @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
-        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; }
-        .modal-content { background: white; border-radius: 12px; max-width: 700px; width: 90%; max-height: 85vh; overflow-y: auto; padding: 24px; }
-        .dark-mode { background-color: #0f172a !important; color: #e2e8f0 !important; }
-        .dark-mode .bg-white { background-color: #1e293b !important; }
-        .dark-mode .modal-content { background-color: #1e293b !important; color: #e2e8f0 !important; }
-        .dark-mode input, .dark-mode select, .dark-mode textarea { background-color: #0f172a !important; border-color: #334155 !important; color: #e2e8f0 !important; }
+        
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .modal-content { background: #1e293b; border-radius: 12px; max-width: 700px; width: 90%; max-height: 85vh; overflow-y: auto; padding: 24px; color: #e2e8f0; }
+        .modal-content input, .modal-content select, .modal-content textarea { background-color: #0f172a !important; border-color: #334155 !important; color: #e2e8f0 !important; }
+        
         button { cursor: pointer; transition: all 0.2s; }
         button:hover { transform: translateY(-2px); }
-        .vehicle-card { transition: 0.3s; background: white; border-radius: 12px; overflow: hidden; }
-        .dark-mode .vehicle-card { background: #1e293b !important; }
-        .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .vehicle-image { width: 100%; height: 200px; object-fit: cover; }
-        .gallery-image { width: 100%; height: 400px; object-fit: cover; }
+        
+        .vehicle-card { transition: 0.3s; background: #1e293b; border-radius: 12px; overflow: hidden; }
+        .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        
+        .vehicle-image { width: 100%; height: 200px; object-fit: cover; cursor: pointer; }
+        .gallery-image { width: 100%; height: 400px; object-fit: cover; cursor: pointer; }
         .thumbnail { width: 70px; height: 70px; object-fit: cover; cursor: pointer; border-radius: 8px; border: 2px solid transparent; }
         .thumbnail.active { border-color: #3b82f6; }
-        .brand-btn { transition: all 0.2s; }
-        .brand-btn:hover { transform: scale(1.05); }
+        
+        .brand-btn { transition: all 0.2s; background-color: #334155; color: #94a3b8 !important; }
+        .brand-btn:hover { transform: scale(1.05); background-color: #3b82f6; color: white !important; }
+        
+        .filter-btn { background-color: #334155; color: #94a3b8 !important; }
+        .filter-btn:hover { background-color: #3b82f6; color: white !important; }
+        .filter-btn-active { background-color: #3b82f6 !important; color: white !important; }
+        
         .preview-image { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; margin: 5px; }
         .gallery-preview { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
         .gallery-item { position: relative; }
         .remove-image-btn { position: absolute; top: -5px; right: -5px; background: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 12px; }
+        
         .hero-section { position: relative; background-image: url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1600&h=600&fit=crop'); background-size: cover; background-position: center; }
-        .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%); }
+        .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%); }
+        
+        .pronto-section { position: relative; background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&h=500&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed; }
+        .pronto-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); }
+        .pronto-content { position: relative; z-index: 2; }
+        
         .add-image-btn { background: #3b82f6; color: white; padding: 8px 16px; border-radius: 8px; display: inline-block; cursor: pointer; margin-top: 10px; }
         .add-image-btn:hover { background: #2563eb; }
+        
         .loading { text-align: center; padding: 50px; font-size: 18px; }
+        
+        /* Lightbox */
+        .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; align-items: center; justify-content: center; z-index: 2000; cursor: pointer; }
+        .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; }
+        .lightbox-close { position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; cursor: pointer; font-weight: bold; }
+        .lightbox-close:hover { color: #ccc; }
+        .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; display: flex; justify-content: space-between; padding: 0 20px; }
+        .lightbox-nav button { background: rgba(0,0,0,0.5); color: white; border: none; font-size: 40px; cursor: pointer; padding: 10px 20px; border-radius: 8px; }
+        .lightbox-nav button:hover { background: rgba(0,0,0,0.8); }
+        
+        .whatsapp-btn { background-color: #25D366; color: white; padding: 12px 24px; border-radius: 12px; font-size: 18px; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; text-decoration: none; }
+        .whatsapp-btn:hover { background-color: #128C7E; transform: scale(1.05); }
     </style>
 </head>
-<body class="bg-gray-100">
+<body>
+
 <div id="app"><div class="loading">🔄 Carregando dados dos veículos...</div></div>
 
 <script>
     // ==================== CONFIGURAÇÕES ====================
     const ADMIN_EMAIL = 'admin@jmveiculos.com';
     const ADMIN_PASSWORD = '245464Jm<becs$';
+    const WHATSAPP_NUMBER = '5567999952567';
+    const WHATSAPP_NAME = 'Gustavo';
+    
     const MARCAS = ["Chevrolet", "Volkswagen", "Peugeot", "Toyota", "Fiat", "Renault", "Ford", "Honda", "Hyundai", "Jeep", "Nissan", "Citroen"];
     
     // ==================== ESTADO ====================
@@ -59,9 +92,13 @@
     let toastMessage = null;
     let selectedMarca = 'todas';
     let filterStatus = 'todos';
-    let isDarkMode = false;
     let currentImageIndex = 0;
     let isLoading = true;
+    
+    // Lightbox state
+    let lightboxOpen = false;
+    let lightboxImages = [];
+    let lightboxCurrentIndex = 0;
     
     // ==================== FUNÇÕES ====================
     function showToast(msg, isError = false) { 
@@ -73,6 +110,17 @@
     function formatPrice(p) { return 'R$ ' + p.toLocaleString('pt-BR'); }
     function getStatusColor(s) { return s === 'disponível' ? 'bg-green-500' : s === 'reservado' ? 'bg-yellow-500' : 'bg-red-500'; }
     
+    function openLightbox(images, index) {
+        lightboxImages = images;
+        lightboxCurrentIndex = index;
+        lightboxOpen = true;
+        render();
+    }
+    
+    function closeLightbox() { lightboxOpen = false; render(); }
+    function nextImage() { if (lightboxCurrentIndex < lightboxImages.length - 1) { lightboxCurrentIndex++; render(); } }
+    function prevImage() { if (lightboxCurrentIndex > 0) { lightboxCurrentIndex--; render(); } }
+    
     // Carregar dados do arquivo JSON
     async function carregarVeiculos() {
         try {
@@ -81,16 +129,14 @@
             const response = await fetch('./dados/veiculos.json');
             if (response.ok) {
                 vehicles = await response.json();
-                console.log('✅ Veículos carregados do arquivo:', vehicles.length);
+                console.log('✅ Veículos carregados:', vehicles.length);
             } else {
                 throw new Error('Arquivo não encontrado');
             }
         } catch (error) {
-            console.error('Erro ao carregar:', error);
-            showToast('⚠️ Erro ao carregar dados', true);
-            // Dados de fallback
+            console.error('Erro:', error);
             vehicles = [
-                { id: 1, nome: "Onix Turbo", marca: "Chevrolet", ano: 2023, preco: 85000, km: 15000, combustivel: "Flex", cambio: "Automático", cor: "Prata", status: "disponível", imagens: ["https://share.google/nrtjTL736zkbd4HrX"], descricao: "Onix LT 1.0 Turbo" }
+                { id: 1, nome: "Gol", marca: "Volkswagen", ano: 2014, preco: 35000, km: 120000, combustivel: "Flex", cambio: "Manual", cor: "Prata", status: "disponível", imagens: ["https://i.imgur.com/hcz1hxh.jpg"], descricao: "Gol 1.6 completo" }
             ];
         } finally {
             isLoading = false;
@@ -109,8 +155,7 @@
     
     function handleLogout() { isAdmin = false; showToast('Logout realizado'); render(); }
     function handleDeleteVehicle(id) { if (confirm('Excluir este veículo?')) { vehicles = vehicles.filter(v => v.id !== id); showToast('Veículo excluído!'); render(); } }
-    function handleContact(vehicle) { showToast(`Interesse em ${vehicle.nome}! Entraremos em contato.`); }
-    function toggleTheme() { isDarkMode = !isDarkMode; render(); }
+    function toggleTheme() { }
     
     // ==================== FUNÇÕES GLOBAIS ====================
     window.selectMarca = (m) => { selectedMarca = m; render(); };
@@ -126,8 +171,10 @@
     window.editVehicle = (id) => { editingVehicle = JSON.parse(JSON.stringify(vehicles.find(v => v.id === id))); showVehicleModal = true; render(); };
     window.updateStatus = (id, status) => { const v = vehicles.find(v => v.id === id); if (v) { v.status = status; showToast('Status atualizado!'); render(); } };
     window.deleteVehicle = handleDeleteVehicle;
-    window.handleContact = handleContact;
-    window.toggleTheme = toggleTheme;
+    window.openLightbox = openLightbox;
+    window.closeLightbox = closeLightbox;
+    window.nextImage = nextImage;
+    window.prevImage = prevImage;
     
     // ==================== SUBMIT VEÍCULO ====================
     window.submitVehicle = async (e) => {
@@ -171,8 +218,6 @@
         const app = document.getElementById('app');
         if (!app) return;
         
-        if (isDarkMode) document.body.classList.add('dark-mode'); else document.body.classList.remove('dark-mode');
-        
         if (isLoading) {
             app.innerHTML = `<div class="loading">🔄 Carregando dados dos veículos...<br><br><div class="text-sm text-gray-500">Aguarde um momento</div></div>`;
             return;
@@ -180,16 +225,15 @@
         
         let html = `
             <div class="min-h-screen flex flex-col">
-                <nav class="bg-white shadow-md sticky top-0 z-50">
+                <nav class="bg-gray-800 shadow-md sticky top-0 z-50">
                     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
                         <div class="text-2xl font-bold cursor-pointer" onclick="window.changePage('home')">
-                            <span style="color:#3b82f6;">JM</span> <span style="color:#6b7280;">VEÍCULOS</span>
+                            <span style="color:#3b82f6;">JM</span> <span style="color:#94a3b8;">VEÍCULOS</span>
                         </div>
                         <div class="flex gap-4 items-center">
-                            <button onclick="window.changePage('home')" class="px-3 py-2 rounded">🏠 Home</button>
-                            <button onclick="window.changePage('vehicles')" class="px-3 py-2 rounded">🚗 Veículos</button>
-                            ${isAdmin ? `<button onclick="window.changePage('admin')" class="px-3 py-2 rounded bg-blue-500 text-white">👑 Admin</button><button onclick="handleLogout()" class="px-3 py-2 rounded bg-red-500 text-white">Sair</button>` : `<button onclick="window.showLogin()" class="px-3 py-2 rounded bg-blue-500 text-white">Admin</button>`}
-                            <button onclick="window.toggleTheme()" class="px-3 py-2 rounded">${isDarkMode ? '☀️' : '🌙'}</button>
+                            <button onclick="window.changePage('home')" class="px-3 py-2 rounded text-gray-300 hover:text-white">Home</button>
+                            <button onclick="window.changePage('vehicles')" class="px-3 py-2 rounded text-gray-300 hover:text-white">Veículos</button>
+                            ${isAdmin ? `<button onclick="window.changePage('admin')" class="px-3 py-2 rounded bg-blue-600 text-white">Admin</button><button onclick="handleLogout()" class="px-3 py-2 rounded bg-red-600 text-white">Sair</button>` : `<button onclick="window.showLogin()" class="px-3 py-2 rounded bg-blue-600 text-white">Admin</button>`}
                         </div>
                     </div>
                 </nav>
@@ -198,33 +242,58 @@
         if (currentPage === 'home') {
             const destaques = vehicles.filter(v => v.status === 'disponível').slice(0, 3);
             html += `
-                <div class="hero-section"><div class="relative z-10 container mx-auto px-4 py-24 text-center"><h1 class="cinzel-text text-5xl font-bold text-white mb-6">Potência, estilo e confiança<br>na sua garagem</h1><p class="text-xl text-gray-200 mb-8">As melhores ofertas com garantia de procedência</p><button onclick="window.changePage('vehicles')" class="bg-blue-600 text-white px-8 py-3 rounded-lg">Ver Ofertas</button></div></div>
-                <div class="container mx-auto px-4 py-16"><h2 class="text-3xl font-bold text-center mb-12">⭐ Veículos em Destaque</h2><div class="grid md:grid-cols-3 gap-6">${destaques.map(v => `<div class="vehicle-card"><img src="${v.imagens[0]}" class="vehicle-image" onerror="this.src='https://placehold.co/500x300?text=Sem+Imagem'"><div class="p-4"><h3 class="text-xl font-bold">${v.nome}</h3><p>${v.marca} - ${v.ano}</p><p class="text-blue-600 text-2xl font-bold">${formatPrice(v.preco)}</p><button onclick="window.viewDetail(${v.id})" class="w-full mt-3 bg-blue-500 text-white py-2 rounded">Ver Detalhes</button></div></div>`).join('')}</div></div>
-                <div class="bg-gray-100 dark:bg-gray-800 py-16"><div class="container mx-auto px-4 text-center"><h2 class="text-3xl font-bold mb-4">🔑 Pronto para começar?</h2><p class="text-lg mb-4">Com a JM Veículos, você está a um passo do carro próprio.</p><button onclick="window.changePage('vehicles')" class="bg-green-600 text-white px-6 py-2 rounded-lg">Quero meu carro</button></div></div>`;
+                <div class="hero-section relative">
+                    <div class="relative z-10 container mx-auto px-4 py-24 text-center">
+                        <h1 class="cinzel-text text-5xl md:text-7xl font-bold text-white mb-6">Potência, estilo e confiança<br>na sua garagem</h1>
+                        <p class="text-xl text-gray-300 mb-8">As melhores ofertas com garantia de procedência</p>
+                        <button onclick="window.changePage('vehicles')" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition transform hover:scale-105">Ver Ofertas</button>
+                    </div>
+                </div>
+                <div class="container mx-auto px-4 py-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white">Veículos em Destaque</h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        ${destaques.map(v => `<div class="vehicle-card"><img src="${v.imagens[0]}" class="vehicle-image" onclick="window.openLightbox(${JSON.stringify(v.imagens).replace(/"/g, '&quot;')}, 0)" onerror="this.src='https://placehold.co/500x300?text=Sem+Imagem'"><div class="p-4"><h3 class="text-xl font-bold text-white">${v.nome}</h3><p class="text-gray-400">${v.marca} - ${v.ano}</p><p class="text-blue-400 text-2xl font-bold mt-2">${formatPrice(v.preco)}</p><button onclick="window.viewDetail(${v.id})" class="w-full mt-3 bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Ver Detalhes</button></div></div>`).join('')}
+                    </div>
+                </div>
+                <div class="pronto-section py-20">
+                    <div class="pronto-content container mx-auto px-4">
+                        <div class="text-center">
+                            <h2 class="text-4xl font-bold text-white mb-4">Pronto para começar?</h2>
+                            <p class="text-xl text-gray-200 mb-6">Com a JM Veículos, você está a um passo do carro próprio.</p>
+                            <a href="https://wa.me/${WHATSAPP_NUMBER}?text=Olá%20Gustavo,%20vim%20pelo%20site%20JM%20Veículos%20e%20tenho%20interesse%20em%20um%20veículo!" target="_blank" class="whatsapp-btn">WhatsApp: (67) 99995-2567 - Gustavo</a>
+                        </div>
+                    </div>
+                </div>`;
         }
         else if (currentPage === 'vehicles') {
             let filtered = vehicles.filter(v => (selectedMarca === 'todas' || v.marca === selectedMarca) && (filterStatus === 'todos' || v.status === filterStatus));
-            html += `<div class="container mx-auto px-4 py-8"><h1 class="text-3xl font-bold mb-6">🚗 Catálogo de Veículos</h1>
-            <div class="mb-4"><label class="font-semibold">Filtrar por Marca:</label><div class="flex flex-wrap gap-2 mt-2">${MARCAS.map(m => `<button onclick="window.selectMarca('${m}')" class="brand-btn px-3 py-1 rounded ${selectedMarca === m ? 'bg-blue-500 text-white' : 'bg-gray-200'}">${m}</button>`).join('')}<button onclick="window.selectMarca('todas')" class="brand-btn px-3 py-1 rounded ${selectedMarca === 'todas' ? 'bg-blue-500 text-white' : 'bg-gray-200'}">Todas</button></div></div>
-            <div class="mb-4"><label class="font-semibold">Filtrar por Status:</label><div class="flex flex-wrap gap-2 mt-2"><button onclick="window.updateFilter('todos')" class="px-3 py-1 rounded ${filterStatus === 'todos' ? 'bg-blue-500 text-white' : 'bg-gray-200'}">Todos</button><button onclick="window.updateFilter('disponível')" class="px-3 py-1 rounded ${filterStatus === 'disponível' ? 'bg-green-500 text-white' : 'bg-gray-200'}">Disponíveis</button><button onclick="window.updateFilter('reservado')" class="px-3 py-1 rounded ${filterStatus === 'reservado' ? 'bg-yellow-500 text-white' : 'bg-gray-200'}">Reservados</button><button onclick="window.updateFilter('vendido')" class="px-3 py-1 rounded ${filterStatus === 'vendido' ? 'bg-red-500 text-white' : 'bg-gray-200'}">Vendidos</button></div></div>
-            <div class="grid md:grid-cols-3 gap-6">${filtered.map(v => `<div class="vehicle-card"><img src="${v.imagens[0]}" class="vehicle-image"><div class="p-4"><div class="flex justify-between"><h2 class="text-xl font-bold">${v.nome}</h2><span class="px-2 py-1 rounded text-xs text-white ${getStatusColor(v.status)}">${v.status}</span></div><p>${v.marca} • ${v.ano} • ${v.km.toLocaleString()} km</p><p class="text-blue-600 text-2xl font-bold">${formatPrice(v.preco)}</p><button onclick="window.viewDetail(${v.id})" class="w-full mt-2 bg-blue-500 text-white py-2 rounded">Ver Detalhes</button></div></div>`).join('')}</div></div>`;
+            html += `<div class="container mx-auto px-4 py-8">
+                <h1 class="text-3xl font-bold mb-6 text-white">Catálogo de Veículos</h1>
+                <div class="mb-4"><label class="block font-semibold mb-2 text-gray-300">Filtrar por Marca:</label><div class="flex flex-wrap gap-2 mt-2">${MARCAS.map(m => `<button onclick="window.selectMarca('${m}')" class="brand-btn px-3 py-1 rounded ${selectedMarca === m ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-400'}">${m}</button>`).join('')}<button onclick="window.selectMarca('todas')" class="brand-btn px-3 py-1 rounded ${selectedMarca === 'todas' ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-400'}">Todas</button></div></div>
+                <div class="mb-4"><label class="block font-semibold mb-2 text-gray-300">Filtrar por Status:</label><div class="flex flex-wrap gap-2 mt-2"><button onclick="window.updateFilter('todos')" class="filter-btn px-3 py-1 rounded ${filterStatus === 'todos' ? 'filter-btn-active' : 'bg-gray-700 text-gray-400'}">Todos</button><button onclick="window.updateFilter('disponível')" class="filter-btn px-3 py-1 rounded ${filterStatus === 'disponível' ? 'filter-btn-active' : 'bg-gray-700 text-gray-400'}">Disponíveis</button><button onclick="window.updateFilter('reservado')" class="filter-btn px-3 py-1 rounded ${filterStatus === 'reservado' ? 'filter-btn-active' : 'bg-gray-700 text-gray-400'}">Reservados</button><button onclick="window.updateFilter('vendido')" class="filter-btn px-3 py-1 rounded ${filterStatus === 'vendido' ? 'filter-btn-active' : 'bg-gray-700 text-gray-400'}">Vendidos</button></div></div>
+                <div class="grid md:grid-cols-3 gap-6">${filtered.map(v => `<div class="vehicle-card"><img src="${v.imagens[0]}" class="vehicle-image" onclick="window.openLightbox(${JSON.stringify(v.imagens).replace(/"/g, '&quot;')}, 0)"><div class="p-4"><div class="flex justify-between"><h2 class="text-xl font-bold text-white">${v.nome}</h2><span class="px-2 py-1 rounded text-xs text-white ${getStatusColor(v.status)}">${v.status}</span></div><p class="text-gray-400">${v.marca} • ${v.ano} • ${v.km.toLocaleString()} km</p><p class="text-blue-400 text-2xl font-bold">${formatPrice(v.preco)}</p><button onclick="window.viewDetail(${v.id})" class="w-full mt-2 bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Ver Detalhes</button></div></div>`).join('')}</div></div>`;
         }
         else if (currentPage === 'detail' && selectedVehicle) {
-            html += `<div class="container mx-auto px-4 py-8"><button onclick="window.changePage('vehicles')" class="text-blue-500 mb-4">← Voltar</button><div class="bg-white rounded-lg shadow-lg p-6"><img src="${selectedVehicle.imagens[currentImageIndex]}" class="gallery-image w-full rounded-lg"><div class="flex gap-2 mt-4 overflow-x-auto">${selectedVehicle.imagens.map((img, i) => `<img src="${img}" class="thumbnail ${currentImageIndex === i ? 'active' : ''}" onclick="window.setImageIndex(${i})">`).join('')}</div><h1 class="text-3xl font-bold mt-4">${selectedVehicle.nome}</h1><p class="text-blue-600 text-4xl font-bold mt-2">${formatPrice(selectedVehicle.preco)}</p><div class="grid md:grid-cols-2 gap-4 mt-6"><div><strong>Marca:</strong> ${selectedVehicle.marca}<br><strong>Ano:</strong> ${selectedVehicle.ano}<br><strong>KM:</strong> ${selectedVehicle.km.toLocaleString()} km</div><div><strong>Descrição:</strong><br>${selectedVehicle.descricao}</div></div><button onclick="window.handleContact(${JSON.stringify(selectedVehicle).replace(/"/g, '&quot;')})" class="w-full mt-6 bg-green-500 text-white py-3 rounded-lg text-lg">💰 Tenho Interesse</button></div></div>`;
+            html += `<div class="container mx-auto px-4 py-8"><button onclick="window.changePage('vehicles')" class="text-blue-400 hover:text-blue-300 mb-4 inline-block">← Voltar</button><div class="bg-gray-800 rounded-lg shadow-lg p-6"><img src="${selectedVehicle.imagens[currentImageIndex]}" class="gallery-image w-full rounded-lg" onclick="window.openLightbox(${JSON.stringify(selectedVehicle.imagens).replace(/"/g, '&quot;')}, ${currentImageIndex})"><div class="flex gap-2 mt-4 overflow-x-auto">${selectedVehicle.imagens.map((img, i) => `<img src="${img}" class="thumbnail ${currentImageIndex === i ? 'active' : ''}" onclick="window.setImageIndex(${i})">`).join('')}</div><h1 class="text-3xl font-bold mt-4 text-white">${selectedVehicle.nome}</h1><p class="text-blue-400 text-4xl font-bold mt-2">${formatPrice(selectedVehicle.preco)}</p><div class="grid md:grid-cols-2 gap-4 mt-6"><div><p class="text-gray-300"><strong class="text-white">Marca:</strong> ${selectedVehicle.marca}</p><p class="text-gray-300"><strong class="text-white">Ano:</strong> ${selectedVehicle.ano}</p><p class="text-gray-300"><strong class="text-white">KM:</strong> ${selectedVehicle.km.toLocaleString()} km</p></div><div><p class="text-gray-300"><strong class="text-white">Descrição:</strong><br>${selectedVehicle.descricao}</p></div></div><div class="mt-6 text-center"><a href="https://wa.me/${WHATSAPP_NUMBER}?text=Olá%20Gustavo,%20vim%20pelo%20site%20JM%20Veículos%20e%20tenho%20interesse%20no%20${selectedVehicle.nome}!" target="_blank" class="whatsapp-btn">WhatsApp: (67) 99995-2567 - Gustavo</a></div></div></div>`;
         }
         else if (currentPage === 'admin' && isAdmin) {
-            html += `<div class="container mx-auto px-4 py-8"><div class="flex justify-between items-center mb-6"><h1 class="text-3xl font-bold">👑 Painel Administrativo</h1><button onclick="window.openVehicleModal()" class="bg-green-500 text-white px-4 py-2 rounded">+ Novo Veículo</button></div><div class="bg-white rounded-lg shadow overflow-x-auto"><table class="w-full"><thead class="bg-gray-100"><tr><th class="p-3">ID</th><th>Imagem</th><th>Veículo</th><th>Preço</th><th>Status</th><th>Fotos</th><th>Ações</th></tr></thead><tbody>${vehicles.map(v => `<tr class="border-t"><td class="p-3">${v.id}</td><td><img src="${v.imagens[0]}" class="w-12 h-12 object-cover rounded"></td><td><b>${v.nome}</b><br><small>${v.marca} ${v.ano}</small></td><td>${formatPrice(v.preco)}</td><td><select onchange="window.updateStatus(${v.id}, this.value)" class="border rounded p-1"><option ${v.status === 'disponível' ? 'selected' : ''}>disponível</option><option ${v.status === 'reservado' ? 'selected' : ''}>reservado</option><option ${v.status === 'vendido' ? 'selected' : ''}>vendido</option></select></td><td>📸 ${v.imagens.length}</td><td><button onclick="window.editVehicle(${v.id})" class="text-blue-600 mr-2">Editar</button><button onclick="window.deleteVehicle(${v.id})" class="text-red-600">Excluir</button></td></tr>`).join('')}</tbody></table></div></div>`;
+            html += `<div class="container mx-auto px-4 py-8"><div class="flex justify-between items-center mb-6"><h1 class="text-3xl font-bold text-white">Painel Administrativo</h1><button onclick="window.openVehicleModal()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">+ Novo Veículo</button></div><div class="bg-gray-800 rounded-lg shadow overflow-x-auto"><table class="w-full"><thead class="bg-gray-700"><tr><th class="p-3 text-left text-gray-300">ID</th><th class="p-3 text-left text-gray-300">Imagem</th><th class="p-3 text-left text-gray-300">Veículo</th><th class="p-3 text-left text-gray-300">Preço</th><th class="p-3 text-left text-gray-300">Status</th><th class="p-3 text-left text-gray-300">Fotos</th><th class="p-3 text-left text-gray-300">Ações</th></tr></thead><tbody>${vehicles.map(v => `<tr class="border-t border-gray-700"><td class="p-3 text-gray-300">${v.id}</td><td class="p-3"><img src="${v.imagens[0]}" class="w-12 h-12 object-cover rounded"></td><td class="p-3"><div class="font-bold text-white">${v.nome}</div><div class="text-sm text-gray-400">${v.marca} ${v.ano}</div></td><td class="p-3 text-gray-300">${formatPrice(v.preco)}</td><td class="p-3"><select onchange="window.updateStatus(${v.id}, this.value)" class="bg-gray-700 border border-gray-600 rounded p-1 text-gray-300"><option ${v.status === 'disponível' ? 'selected' : ''}>disponível</option><option ${v.status === 'reservado' ? 'selected' : ''}>reservado</option><option ${v.status === 'vendido' ? 'selected' : ''}>vendido</option></select></td><td class="p-3 text-gray-300">📸 ${v.imagens.length}</td><td class="p-3"><button onclick="window.editVehicle(${v.id})" class="text-blue-400 mr-2 hover:text-blue-300">Editar</button><button onclick="window.deleteVehicle(${v.id})" class="text-red-400 hover:text-red-300">Excluir</button></td></tr>`).join('')}</tbody></table></div></div>`;
         }
         
-        html += `</div><footer class="bg-gray-800 text-white text-center py-4 mt-8">© 2024 JM Veículos - Potência, estilo e confiança</footer></div>`;
+        html += `</div><footer class="bg-gray-900 text-gray-400 text-center py-4 mt-8">© 2024 JM Veículos - Potência, estilo e confiança</footer></div>`;
+        
+        // Lightbox
+        if (lightboxOpen && lightboxImages.length > 0) {
+            html += `<div class="lightbox" onclick="window.closeLightbox()"><div class="lightbox-close" onclick="window.closeLightbox()">✕</div><div class="lightbox-nav">${lightboxCurrentIndex > 0 ? '<button onclick="event.stopPropagation(); window.prevImage()">◀</button>' : '<div></div>'}${lightboxCurrentIndex < lightboxImages.length - 1 ? '<button onclick="event.stopPropagation(); window.nextImage()">▶</button>' : '<div></div>'}</div><img src="${lightboxImages[lightboxCurrentIndex]}" onclick="event.stopPropagation()"></div>`;
+        }
         
         if (showLoginModal) {
-            html += `<div class="modal-overlay"><div class="modal-content"><h2 class="text-2xl font-bold mb-4">Login Admin</h2><form onsubmit="window.submitLogin(event)"><input type="email" id="loginEmail" placeholder="E-mail" class="w-full p-2 border rounded mb-2" required><input type="password" id="loginPass" placeholder="Senha" class="w-full p-2 border rounded mb-2" required><button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Entrar</button><button type="button" onclick="window.closeLogin()" class="w-full mt-2 bg-gray-500 text-white py-2 rounded">Cancelar</button></form></div></div>`;
+            html += `<div class="modal-overlay"><div class="modal-content"><h2 class="text-2xl font-bold mb-4 text-white">Login Admin</h2><form onsubmit="window.submitLogin(event)"><input type="email" id="loginEmail" placeholder="E-mail" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white" required><input type="password" id="loginPass" placeholder="Senha" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white" required><button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Entrar</button><button type="button" onclick="window.closeLogin()" class="w-full mt-2 bg-gray-600 text-white py-2 rounded hover:bg-gray-700">Cancelar</button></form></div></div>`;
         }
         
         if (showVehicleModal) {
             const v = editingVehicle || { nome: '', marca: MARCAS[0], ano: 2024, preco: 0, km: 0, combustivel: 'Flex', cambio: 'Manual', cor: '', descricao: '', imagens: [] };
-            html += `<div class="modal-overlay"><div class="modal-content"><h2 class="text-2xl font-bold mb-4">${editingVehicle ? 'Editar Veículo' : 'Novo Veículo'}</h2><form id="vehicleForm"><input type="text" id="nome" placeholder="Nome" value="${v.nome}" class="w-full p-2 border rounded mb-2" required><select id="marca" class="w-full p-2 border rounded mb-2">${MARCAS.map(m => `<option ${v.marca === m ? 'selected' : ''}>${m}</option>`).join('')}</select><div class="grid grid-cols-2 gap-2 mb-2"><input type="number" id="ano" placeholder="Ano" value="${v.ano}" class="p-2 border rounded" required><input type="number" id="preco" placeholder="Preço" value="${v.preco}" class="p-2 border rounded" required><input type="number" id="km" placeholder="KM" value="${v.km}" class="p-2 border rounded" required><input type="text" id="cor" placeholder="Cor" value="${v.cor}" class="p-2 border rounded" required></div><select id="combustivel" class="w-full p-2 border rounded mb-2"><option ${v.combustivel === 'Flex' ? 'selected' : ''}>Flex</option><option ${v.combustivel === 'Gasolina' ? 'selected' : ''}>Gasolina</option><option ${v.combustivel === 'Diesel' ? 'selected' : ''}>Diesel</option></select><select id="cambio" class="w-full p-2 border rounded mb-2"><option ${v.cambio === 'Manual' ? 'selected' : ''}>Manual</option><option ${v.cambio === 'Automático' ? 'selected' : ''}>Automático</option></select><textarea id="descricao" placeholder="Descrição" rows="3" class="w-full p-2 border rounded mb-2">${v.descricao}</textarea><div><label class="block font-semibold mb-2">📸 Fotos do Veículo</label><div id="imagePreview" class="gallery-preview">${v.imagens.map(img => `<div class="gallery-item"><img src="${img}" class="preview-image"><div class="remove-image-btn" onclick="this.parentElement.remove()">×</div></div>`).join('')}</div><input type="file" id="vehicleImages" accept="image/*" multiple style="display:none"><button type="button" onclick="document.getElementById('vehicleImages').click()" class="add-image-btn">+ Selecionar Fotos</button></div><div class="flex gap-2 mt-4"><button type="submit" class="flex-1 bg-blue-500 text-white py-2 rounded">Salvar</button><button type="button" onclick="window.closeVehicleModal()" class="flex-1 bg-gray-500 text-white py-2 rounded">Cancelar</button></div></form></div></div>`;
+            html += `<div class="modal-overlay"><div class="modal-content"><h2 class="text-2xl font-bold mb-4 text-white">${editingVehicle ? 'Editar Veículo' : 'Novo Veículo'}</h2><form id="vehicleForm"><input type="text" id="nome" placeholder="Nome" value="${v.nome}" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white" required><select id="marca" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white">${MARCAS.map(m => `<option ${v.marca === m ? 'selected' : ''}>${m}</option>`).join('')}</select><div class="grid grid-cols-2 gap-2 mb-2"><input type="number" id="ano" placeholder="Ano" value="${v.ano}" class="p-2 border rounded bg-gray-800 border-gray-700 text-white" required><input type="number" id="preco" placeholder="Preço" value="${v.preco}" class="p-2 border rounded bg-gray-800 border-gray-700 text-white" required><input type="number" id="km" placeholder="KM" value="${v.km}" class="p-2 border rounded bg-gray-800 border-gray-700 text-white" required><input type="text" id="cor" placeholder="Cor" value="${v.cor}" class="p-2 border rounded bg-gray-800 border-gray-700 text-white" required></div><select id="combustivel" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white"><option ${v.combustivel === 'Flex' ? 'selected' : ''}>Flex</option><option ${v.combustivel === 'Gasolina' ? 'selected' : ''}>Gasolina</option><option ${v.combustivel === 'Diesel' ? 'selected' : ''}>Diesel</option></select><select id="cambio" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white"><option ${v.cambio === 'Manual' ? 'selected' : ''}>Manual</option><option ${v.cambio === 'Automático' ? 'selected' : ''}>Automático</option></select><textarea id="descricao" placeholder="Descrição" rows="3" class="w-full p-2 border rounded mb-2 bg-gray-800 border-gray-700 text-white">${v.descricao}</textarea><div><label class="block font-semibold mb-2 text-gray-300">Fotos do Veículo</label><div id="imagePreview" class="gallery-preview">${v.imagens.map(img => `<div class="gallery-item"><img src="${img}" class="preview-image"><div class="remove-image-btn" onclick="this.parentElement.remove()">×</div></div>`).join('')}</div><input type="file" id="vehicleImages" accept="image/*" multiple style="display:none"><button type="button" onclick="document.getElementById('vehicleImages').click()" class="add-image-btn">+ Selecionar Fotos</button></div><div class="flex gap-2 mt-4"><button type="submit" class="flex-1 bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Salvar</button><button type="button" onclick="window.closeVehicleModal()" class="flex-1 bg-gray-600 text-white py-2 rounded hover:bg-gray-700">Cancelar</button></div></form></div></div>`;
         }
         
         if (toastMessage) html += `<div class="toast" style="background:${toastMessage.isError ? '#ef4444' : '#10b981'}">${toastMessage.text}</div>`;
