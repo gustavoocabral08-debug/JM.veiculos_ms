@@ -20,29 +20,37 @@
     "id": 2,
     "nome": "Golf GTI",
     "marca": "Volkswagen",
-    "ano": 2022,
-    "preco": 165000,
-    "km": 35000,
+    "ano": 2024,
+    "preco": 180000,
+    "km": 20000,
     "combustivel": "Gasolina",
     "cambio": "Automático",
     "cor": "Preto",
     "status": "disponível",
-    "imagens": ["/imagens/golf.jpg"],
-    "descricao": "Golf GTI 2.0 TSI, bancos de couro."
+    "imagens": [
+      "https://i.imgur.com/aF3wGGf.jpg",
+      "https://i.imgur.com/QO4TX6m.jpg",
+      "https://i.imgur.com/t7j4zna.jpg"
+    ],
+    "descricao": "Golf GTI 2.0 TSI – 20.000 km rodados, único dono, revisões em concessionária. Bancos de couro, teto solar, painel digital, faróis full LED e rodas de liga leve. Um dos hatches mais desejados, com desempenho e esportividade."
   },
   {
     "id": 3,
-    "nome": "Corolla XEI",
-    "marca": "Toyota",
-    "ano": 2022,
-    "preco": 135000,
-    "km": 28000,
+    "nome": "Civic EXL",
+    "marca": "Honda",
+    "ano": 2023,
+    "preco": 160000,
+    "km": 45000,
     "combustivel": "Flex",
-    "cambio": "CVT",
-    "cor": "Branco",
-    "status": "reservado",
-    "imagens": ["/imagens/corolla.jpg"],
-    "descricao": "Corolla XEI completo, bancos de couro."
+    "cambio": "Automático",
+    "cor": "Preto",
+    "status": "vendido",
+    "imagens": [
+      "https://i.imgur.com/u0cTqWd.jpg",
+      "https://i.imgur.com/TfqSN3f.jpg",
+      "https://i.imgur.com/zcUDiX9.jpg"
+    ],
+    "descricao": "Honda Civic EXL – 45.000 km rodados, único dono, revisões em concessionária. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmera de ré, sensor de estacionamento e rodas de liga leve. Econômico, confiável e com excelente revenda."
   },
   {
     "id": 4,
@@ -64,16 +72,20 @@
   },
   {
     "id": 5,
-    "nome": "Civic EXL",
-    "marca": "Honda",
-    "ano": 2020,
-    "preco": 110000,
-    "km": 45000,
+    "nome": "Corolla XEI",
+    "marca": "Toyota",
+    "ano": 2023,
+    "preco": 180000,
+    "km": 60000,
     "combustivel": "Flex",
-    "cambio": "Automático",
-    "cor": "Preto",
-    "status": "vendido",
-    "imagens": ["/imagens/civic.jpg"],
-    "descricao": "Civic EXL, único dono."
+    "cambio": "CVT",
+    "cor": "Prata",
+    "status": "reservado",
+    "imagens": [
+      "https://i.imgur.com/CBxUPWw.jpg",
+      "https://i.imgur.com/oszZxWT.jpg",
+      "https://i.imgur.com/T9gwYdb.jpg"
+    ],
+    "descricao": "Toyota Corolla XEI – 60.000 km rodados, único dono, revisões em concessionária. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmbio CVT, rodas de liga leve e pacote de segurança. Conforto, economia e revenda garantida."
   }
 ]
