@@ -48,15 +48,19 @@
     "id": 4,
     "nome": "Hilux SRV",
     "marca": "Toyota",
-    "ano": 2021,
-    "preco": 220000,
-    "km": 35000,
+    "ano": 2025,
+    "preco": 280000,
+    "km": 15000,
     "combustivel": "Diesel",
     "cambio": "Automático",
     "cor": "Prata",
     "status": "disponível",
-    "imagens": ["/imagens/hilux.jpg"],
-    "descricao": "Hilux 4x4, capota marítima."
+    "imagens": [
+      "https://i.imgur.com/wkXQ4AO.jpg",
+      "https://i.imgur.com/ZusJxr6.jpg",
+      "https://i.imgur.com/bse5G2h.jpg"
+    ],
+    "descricao": "Hilux SRV 4x4 – 15.000 km rodados, única dona, revisões em dia. Bancos em couro, ar condicionado digital, multimídia, câmera de ré e capota marítima. Pronta para encarar qualquer estrada."
   },
   {
     "id": 5,
