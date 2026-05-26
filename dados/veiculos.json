@@ -1,91 +1,105 @@
 [
   {
      "id": 1,
-    "nome": "Gol",
-    "marca": "Volkswagen",
+    "nome": "Spin LTZ 1.8",
+    "marca": "Chevrolet",
+    "ano": 2013,
+    "preco": 54000,
+    "km": 110000,
+    "combustivel": "Flex",
+    "cambio": "Automática",
+    "cor": "Prata",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/aVwwThl.jpg",
+      "https://i.imgur.com/XDhEBEH.jpg",
+      "https://i.imgur.com/khFHTqy.jpg",
+      "https://i.imgur.com/uTWEuoF.jpg",
+      "https://i.imgur.com/uCMklbB.jpg",
+      "https://i.imgur.com/J4ku1YR.jpg"
+    ],
+    "descricao": "Chevrolet Spin LTZ 1.8 Automática. Sete lugares, bancos de couro, ar condicionado, direção elétrica, multimídia, sensor de estacionamento e rodas de liga leve. Espaçosa, confiável e ideal para famílias."
+  },
+  {
+    "id": 2,
+    "nome": "Hilux SRV Top 3.0",
+    "marca": "Toyota",
     "ano": 2014,
-    "preco": 35000,
-    "km": 120000,
+    "preco": 135000,
+    "km": 295000,
+    "combustivel": "Diesel",
+    "cambio": "Automático",
+    "cor": "Preta",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/d5j0agG.jpg",
+      "https://i.imgur.com/QwHxcfB.jpg",
+      "https://i.imgur.com/E8h5Xmv.jpg",
+      "https://i.imgur.com/y3veqRj.jpg",
+      "https://i.imgur.com/RkjlA3e.jpg",
+      "https://i.imgur.com/muhHZ0V.jpg"
+    ],
+    "descricao": "Toyota Hilux SRV Top 3.0 , bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4, câmera de ré e capota marítima. Robustez e confiabilidade para trabalho e lazer."
+  },
+  {
+    "id": 3,
+    "nome": "Corolla GLI 2.0",
+    "marca": "Toyota",
+    "ano": 2021,
+    "preco": 115000,
+    "km": 70000,
+    "combustivel": "Flex",
+    "cambio": "Automático",
+    "cor": "Branca",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/wL2cqpM.jpg",
+      "https://i.imgur.com/agzXfNt.jpg",
+      "https://i.imgur.com/9Tuvlf4.jpg",
+      "https://i.imgur.com/JZlQ1sl.jpg",
+      "https://i.imgur.com/bEbgjkq.jpg",
+      "https://i.imgur.com/BFnwRCH.jpg"
+    ],
+    "descricao": "Toyota Corolla GLI 2.0. Bancos de couro, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Conforto, economia e excelente revenda."
+  },
+  {
+    "id": 4,
+    "nome": "Onix LT 1.0",
+    "marca": "Chevrolet",
+    "ano": 2024,
+    "preco": 71000,
+    "km": 20000,
     "combustivel": "Flex",
     "cambio": "Manual",
     "cor": "Prata",
     "status": "disponível",
     "imagens": [
-    "https://i.imgur.com/hcz1hxh.jpg",
-    "https://i.imgur.com/2zjyV6z.jpg"
-  ],
-    "descricao": "Gol 1.6 completo, econômico."
-  },
-  {
-    "id": 2,
-    "nome": "Golf GTI",
-    "marca": "Volkswagen",
-    "ano": 2024,
-    "preco": 180000,
-    "km": 20000,
-    "combustivel": "Gasolina",
-    "cambio": "Automático",
-    "cor": "Preto",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/aF3wGGf.jpg",
-      "https://i.imgur.com/QO4TX6m.jpg",
-      "https://i.imgur.com/t7j4zna.jpg"
+      "https://i.imgur.com/iLEhunC.jpg",
+      "https://i.imgur.com/fsYnVBD.jpg",
+      "https://i.imgur.com/M94NrqB.jpg",
+      "https://i.imgur.com/Fsqv1J6.jpg",
+      "https://i.imgur.com/d1RksnX.jpg",
+      "https://i.imgur.com/EXxDzN3.jpg"
     ],
-    "descricao": "Golf GTI 2.0 TSI – 20.000 km rodados, único dono, revisões em concessionária. Bancos de couro, teto solar, painel digital, faróis full LED e rodas de liga leve. Um dos hatches mais desejados, com desempenho e esportividade."
-  },
-  {
-    "id": 3,
-    "nome": "Civic EXL",
-    "marca": "Honda",
-    "ano": 2023,
-    "preco": 160000,
-    "km": 45000,
-    "combustivel": "Flex",
-    "cambio": "Automático",
-    "cor": "Preto",
-    "status": "vendido",
-    "imagens": [
-      "https://i.imgur.com/u0cTqWd.jpg",
-      "https://i.imgur.com/TfqSN3f.jpg",
-      "https://i.imgur.com/zcUDiX9.jpg"
-    ],
-    "descricao": "Honda Civic EXL – 45.000 km rodados, único dono, revisões em concessionária. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmera de ré, sensor de estacionamento e rodas de liga leve. Econômico, confiável e com excelente revenda."
-  },
-  {
-    "id": 4,
-    "nome": "Hilux SRV",
-    "marca": "Toyota",
-    "ano": 2025,
-    "preco": 280000,
-    "km": 15000,
-    "combustivel": "Diesel",
-    "cambio": "Automático",
-    "cor": "Prata",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/wkXQ4AO.jpg",
-      "https://i.imgur.com/ZusJxr6.jpg",
-      "https://i.imgur.com/bse5G2h.jpg"
-    ],
-    "descricao": "Hilux SRV 4x4 – 15.000 km rodados, única dona, revisões em dia. Bancos em couro, ar condicionado digital, multimídia, câmera de ré e capota marítima. Pronta para encarar qualquer estrada."
-  },
+    "descricao": "Chevrolet Onix LT 1.0. Econômico, completo, com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Ideal para quem busca economia e tecnologia."  },
   {
     "id": 5,
-    "nome": "Corolla XEI",
-    "marca": "Toyota",
-    "ano": 2023,
-    "preco": 180000,
-    "km": 60000,
+    "nome": "Civic EXR 2.0",
+    "marca": "Honda",
+    "ano": 2014,
+    "preco": 78000,
+    "km": 140000,
     "combustivel": "Flex",
-    "cambio": "CVT",
-    "cor": "Prata",
-    "status": "reservado",
+    "cambio": "Automático",
+    "cor": "Preto",
+    "status": "disponível",
     "imagens": [
-      "https://i.imgur.com/CBxUPWw.jpg",
-      "https://i.imgur.com/oszZxWT.jpg",
-      "https://i.imgur.com/T9gwYdb.jpg"
+      "https://i.imgur.com/1UBLUtE.jpg",
+      "https://i.imgur.com/ev9dbUJ.jpg",
+      "https://i.imgur.com/biVoqSp.jpg",
+      "https://i.imgur.com/JWTMsWD.jpg",
+      "https://i.imgur.com/Tn126WI.jpg",
+      "https://i.imgur.com/YDgnVp0.jpg"
     ],
-    "descricao": "Toyota Corolla XEI – 60.000 km rodados, único dono, revisões em concessionária. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmbio CVT, rodas de liga leve e pacote de segurança. Conforto, economia e revenda garantida."
-  }
+    "descricao": "Honda Civic EXR 2.0. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design esportivo, desempenho e confiabilidade Honda."  }
 ]
