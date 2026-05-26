@@ -1,6 +1,6 @@
 [
   {
-     "id": 1,
+    "id": 1,
     "nome": "Spin LTZ 1.8",
     "marca": "Chevrolet",
     "ano": 2013,
@@ -39,7 +39,7 @@
       "https://i.imgur.com/RkjlA3e.jpg",
       "https://i.imgur.com/muhHZ0V.jpg"
     ],
-    "descricao": "Toyota Hilux SRV Top 3.0 , bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4, câmera de ré e capota marítima. Robustez e confiabilidade para trabalho e lazer."
+    "descricao": "Toyota Hilux SRV Top 3.0, bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4, câmera de ré e capota marítima. Robustez e confiabilidade para trabalho e lazer."
   },
   {
     "id": 3,
@@ -81,7 +81,8 @@
       "https://i.imgur.com/d1RksnX.jpg",
       "https://i.imgur.com/EXxDzN3.jpg"
     ],
-    "descricao": "Chevrolet Onix LT 1.0. Econômico, completo, com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Ideal para quem busca economia e tecnologia."  },
+    "descricao": "Chevrolet Onix LT 1.0. Econômico, completo, com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Ideal para quem busca economia e tecnologia."
+  },
   {
     "id": 5,
     "nome": "Civic EXR 2.0",
@@ -101,9 +102,8 @@
       "https://i.imgur.com/Tn126WI.jpg",
       "https://i.imgur.com/YDgnVp0.jpg"
     ],
-    "descricao": "Honda Civic EXR 2.0. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design esportivo, desempenho e confiabilidade Honda."  }
-]
-[
+    "descricao": "Honda Civic EXR 2.0. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design esportivo, desempenho e confiabilidade Honda."
+  },
   {
     "id": 6,
     "nome": "Cruze LTZ 1.4 Turbo",
@@ -124,9 +124,7 @@
       "https://i.imgur.com/DwpfBNG.jpg"
     ],
     "descricao": "Chevrolet Cruze LTZ 1.4 Turbo. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Desempenho, economia e muito conforto."
-  }
-]
-[
+  },
   {
     "id": 7,
     "nome": "Trailblazer Premier 2.8",
@@ -147,9 +145,7 @@
       "https://i.imgur.com/bi18qQQ.jpg"
     ],
     "descricao": "Chevrolet Trailblazer Premier 2.8. Bancos de couro, ar condicionado, multimídia, InstarLink, câmbio automático, tração 4x4, rodas de liga leve, sensor de estacionamento e câmera de ré. Robustez, conforto e tecnologia para toda a família."
-  }
-]
-[
+  },
   {
     "id": 8,
     "nome": "Kwid Zen 1.0",
@@ -170,9 +166,7 @@
       "https://i.imgur.com/UmHaORp.jpg"
     ],
     "descricao": "Renault Kwid Zen 1.0. Econômico, compacto e ideal para a cidade. Completo com ar condicionado, direção elétrica, vidros elétricos, multimídia. Perfeito para quem busca economia e praticidade."
-  }
-]
-[
+  },
   {
     "id": 9,
     "nome": "Yamaha XTZ 250",
@@ -191,9 +185,7 @@
       "https://i.imgur.com/oGkPNEx.jpg"
     ],
     "descricao": "Yamaha XTZ 250. Moto robusta e confiável, ideal para estradas de terra e uso misto. Econômica, peças fáceis e excelente revenda. Perfeita para quem busca aventura e durabilidade."
-  }
-]
-[
+  },
   {
     "id": 10,
     "nome": "208 Allure 1.6",
@@ -214,9 +206,7 @@
       "https://i.imgur.com/VG9nfOL.jpg"
     ],
     "descricao": "Peugeot 208 Allure 1.6. Bancos de couro, ar condicionado, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design moderno, tecnologia e muito estilo."
-  }
-]
-[
+  },
   {
     "id": 11,
     "nome": "Mobi Like 1.0",
@@ -237,9 +227,7 @@
       "https://i.imgur.com/lGVMmN3.jpg"
     ],
     "descricao": "Fiat Mobi Like 1.0. Econômico, compacto e ideal para a cidade. Completo com ar condicionado, direção elétrica, vidros elétricos, multimídia e rodas de liga leve. Perfeito para mobilidade urbana com baixo custo de manutenção."
-  }
-]
-[
+  },
   {
     "id": 12,
     "nome": "208 Like 1.0",
@@ -260,9 +248,7 @@
       "https://i.imgur.com/3XhYQrW.jpg"
     ],
     "descricao": "Peugeot 208 Like 1.0. Econômico, compacto e cheio de estilo. Completo com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Design moderno e baixo custo de manutenção."
-  }
-]
-[
+  },
   {
     "id": 13,
     "nome": "Corolla GLI 1.8",
