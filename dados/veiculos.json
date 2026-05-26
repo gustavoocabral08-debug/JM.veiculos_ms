@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+     "id": 1,
     "nome": "Spin LTZ 1.8",
     "marca": "Chevrolet",
     "ano": 2013,
@@ -39,7 +39,7 @@
       "https://i.imgur.com/RkjlA3e.jpg",
       "https://i.imgur.com/muhHZ0V.jpg"
     ],
-    "descricao": "Toyota Hilux SRV Top 3.0, bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4, câmera de ré e capota marítima. Robustez e confiabilidade para trabalho e lazer."
+    "descricao": "Toyota Hilux SRV Top 3.0 , bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4, câmera de ré e capota marítima. Robustez e confiabilidade para trabalho e lazer."
   },
   {
     "id": 3,
@@ -81,8 +81,7 @@
       "https://i.imgur.com/d1RksnX.jpg",
       "https://i.imgur.com/EXxDzN3.jpg"
     ],
-    "descricao": "Chevrolet Onix LT 1.0. Econômico, completo, com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Ideal para quem busca economia e tecnologia."
-  },
+    "descricao": "Chevrolet Onix LT 1.0. Econômico, completo, com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Ideal para quem busca economia e tecnologia."  },
   {
     "id": 5,
     "nome": "Civic EXR 2.0",
@@ -102,172 +101,5 @@
       "https://i.imgur.com/Tn126WI.jpg",
       "https://i.imgur.com/YDgnVp0.jpg"
     ],
-    "descricao": "Honda Civic EXR 2.0. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design esportivo, desempenho e confiabilidade Honda."
-  },
-  {
-    "id": 6,
-    "nome": "Cruze LTZ 1.4 Turbo",
-    "marca": "Chevrolet",
-    "ano": 2019,
-    "preco": 95000,
-    "km": 120000,
-    "combustivel": "Flex",
-    "cambio": "Automático",
-    "cor": "Preta",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/jJfNm0U.jpg",
-      "https://i.imgur.com/Az3M8hx.jpg",
-      "https://i.imgur.com/6WEayrn.jpg",
-      "https://i.imgur.com/XgMLZxm.jpg",
-      "https://i.imgur.com/Ixu0yaH.jpg",
-      "https://i.imgur.com/DwpfBNG.jpg"
-    ],
-    "descricao": "Chevrolet Cruze LTZ 1.4 Turbo. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Desempenho, economia e muito conforto."
-  },
-  {
-    "id": 7,
-    "nome": "Trailblazer Premier 2.8",
-    "marca": "Chevrolet",
-    "ano": 2022,
-    "preco": 200000,
-    "km": 110000,
-    "combustivel": "Diesel",
-    "cambio": "Automático",
-    "cor": "Preta",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/ux5AzQ2.jpg",
-      "https://i.imgur.com/XuQujbm.jpg",
-      "https://i.imgur.com/8xIKxIc.jpg",
-      "https://i.imgur.com/Dljv0jj.jpg",
-      "https://i.imgur.com/8G9NoP4.jpg",
-      "https://i.imgur.com/bi18qQQ.jpg"
-    ],
-    "descricao": "Chevrolet Trailblazer Premier 2.8. Bancos de couro, ar condicionado, multimídia, InstarLink, câmbio automático, tração 4x4, rodas de liga leve, sensor de estacionamento e câmera de ré. Robustez, conforto e tecnologia para toda a família."
-  },
-  {
-    "id": 8,
-    "nome": "Kwid Zen 1.0",
-    "marca": "Renault",
-    "ano": 2024,
-    "preco": 50000,
-    "km": 37000,
-    "combustivel": "Flex",
-    "cambio": "Manual",
-    "cor": "Branco",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/goWFDDA.jpg",
-      "https://i.imgur.com/8F9bPly.jpg",
-      "https://i.imgur.com/u1LY3Jo.jpg",
-      "https://i.imgur.com/AmBk3CW.jpg",
-      "https://i.imgur.com/ERnkvtD.jpg",
-      "https://i.imgur.com/UmHaORp.jpg"
-    ],
-    "descricao": "Renault Kwid Zen 1.0. Econômico, compacto e ideal para a cidade. Completo com ar condicionado, direção elétrica, vidros elétricos, multimídia. Perfeito para quem busca economia e praticidade."
-  },
-  {
-    "id": 9,
-    "nome": "Yamaha XTZ 250",
-    "marca": "Yamaha",
-    "ano": 2015,
-    "preco": 13000,
-    "km": 68000,
-    "combustivel": "Gasolina",
-    "cambio": "Manual",
-    "cor": "Azul",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/xcQgLCP.jpg",
-      "https://i.imgur.com/FFAaxKX.jpg",
-      "https://i.imgur.com/OC6F2qU.jpg",
-      "https://i.imgur.com/oGkPNEx.jpg"
-    ],
-    "descricao": "Yamaha XTZ 250. Moto robusta e confiável, ideal para estradas de terra e uso misto. Econômica, peças fáceis e excelente revenda. Perfeita para quem busca aventura e durabilidade."
-  },
-  {
-    "id": 10,
-    "nome": "208 Allure 1.6",
-    "marca": "Peugeot",
-    "ano": 2022,
-    "preco": 69000,
-    "km": 87000,
-    "combustivel": "Flex",
-    "cambio": "Automático",
-    "cor": "Azul",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/rNhZ1KH.jpg",
-      "https://i.imgur.com/ZlMyAAd.jpg",
-      "https://i.imgur.com/ZcsgjGi.jpg",
-      "https://i.imgur.com/HlkuDJd.jpg",
-      "https://i.imgur.com/KbQHWdZ.jpg",
-      "https://i.imgur.com/VG9nfOL.jpg"
-    ],
-    "descricao": "Peugeot 208 Allure 1.6. Bancos de couro, ar condicionado, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design moderno, tecnologia e muito estilo."
-  },
-  {
-    "id": 11,
-    "nome": "Mobi Like 1.0",
-    "marca": "Fiat",
-    "ano": 2025,
-    "preco": 60000,
-    "km": 40000,
-    "combustivel": "Flex",
-    "cambio": "Manual",
-    "cor": "Branco",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/3z81wM8.jpg",
-      "https://i.imgur.com/Sla9egN.jpg",
-      "https://i.imgur.com/syPTNuI.jpg",
-      "https://i.imgur.com/FfWykYL.jpg",
-      "https://i.imgur.com/Fhz10zg.jpg",
-      "https://i.imgur.com/lGVMmN3.jpg"
-    ],
-    "descricao": "Fiat Mobi Like 1.0. Econômico, compacto e ideal para a cidade. Completo com ar condicionado, direção elétrica, vidros elétricos, multimídia e rodas de liga leve. Perfeito para mobilidade urbana com baixo custo de manutenção."
-  },
-  {
-    "id": 12,
-    "nome": "208 Like 1.0",
-    "marca": "Peugeot",
-    "ano": 2024,
-    "preco": 65000,
-    "km": 45000,
-    "combustivel": "Flex",
-    "cambio": "Manual",
-    "cor": "Preta",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/zWmp0qs.jpg",
-      "https://i.imgur.com/ZcQUBD7.jpg",
-      "https://i.imgur.com/gOSCQHF.jpg",
-      "https://i.imgur.com/kpXaIM4.jpg",
-      "https://i.imgur.com/PuWV0k0.jpg",
-      "https://i.imgur.com/3XhYQrW.jpg"
-    ],
-    "descricao": "Peugeot 208 Like 1.0. Econômico, compacto e cheio de estilo. Completo com ar condicionado, direção elétrica, vidros elétricos, multimídia com CarPlay e rodas de liga leve. Design moderno e baixo custo de manutenção."
-  },
-  {
-    "id": 13,
-    "nome": "Corolla GLI 1.8",
-    "marca": "Toyota",
-    "ano": 2017,
-    "preco": 82000,
-    "km": 100000,
-    "combustivel": "Flex",
-    "cambio": "Automático",
-    "cor": "Prata",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/lX91en9.jpg",
-      "https://i.imgur.com/9tx3RRx.jpg",
-      "https://i.imgur.com/4CvqcSV.jpg",
-      "https://i.imgur.com/FQs9omw.jpg",
-      "https://i.imgur.com/1lEd3jg.jpg",
-      "https://i.imgur.com/oOLatjQ.jpg"
-    ],
-    "descricao": "Toyota Corolla GLI 1.8. Bancos de couro, ar condicionado digital, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Conforto, economia e excelente revenda."
-  }
+    "descricao": "Honda Civic EXR 2.0. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Design esportivo, desempenho e confiabilidade Honda."  }
 ]
