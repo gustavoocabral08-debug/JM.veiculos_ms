@@ -39,7 +39,7 @@
       "https://i.imgur.com/RkjlA3e.jpg",
       "https://i.imgur.com/muhHZ0V.jpg"
     ],
-    "descricao": "Toyota Hilux SRV Top 3.0 , bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4, câmera de ré e capota marítima. Robustez e confiabilidade para trabalho e lazer."
+    "descricao": "Toyota Hilux SRV Top 3.0 , bem conservada, manutenções em dia. Bancos de couro, ar condicionado, direção hidráulica, vidros elétricos, tração 4x4 e capota marítima. Robustez e confiabilidade para trabalho e lazer."
   },
   {
     "id": 3,
@@ -121,7 +121,7 @@
       "https://i.imgur.com/Ixu0yaH.jpg",
       "https://i.imgur.com/DwpfBNG.jpg"
     ],
-    "descricao": "Chevrolet Cruze LTZ 1.4 Turbo. Bancos de couro, ar condicionado digital, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Desempenho, economia e muito conforto."},
+    "descricao": "Chevrolet Cruze LTZ 1.4 Turbo. Bancos de couro, ar condicionado, multimídia com CarPlay, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Desempenho, economia e muito conforto."},
    {
     "id": 7,
     "nome": "Trailblazer Premier 2.8",
@@ -176,8 +176,7 @@
     "imagens": [
       "https://i.imgur.com/xcQgLCP.jpg",
       "https://i.imgur.com/FFAaxKX.jpg",
-      "https://i.imgur.com/OC6F2qU.jpg",
-      "https://i.imgur.com/oGkPNEx.jpg"
+      "https://i.imgur.com/OC6F2qU.jpg"
     ],
     "descricao": "Yamaha XTZ 250. Moto robusta e confiável, ideal para estradas de terra e uso misto. Econômica, peças fáceis e excelente revenda. Perfeita para quem busca aventura e durabilidade."},
   {
@@ -259,6 +258,6 @@
       "https://i.imgur.com/1lEd3jg.jpg",
       "https://i.imgur.com/oOLatjQ.jpg"
     ],
-    "descricao": "Toyota Corolla GLI 1.8. Bancos de couro, ar condicionado digital, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Conforto, economia e excelente revenda."
+    "descricao": "Toyota Corolla GLI 1.8. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Conforto, economia e excelente revenda."
     }
 ]
