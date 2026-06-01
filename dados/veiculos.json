@@ -72,7 +72,7 @@
     "combustivel": "Flex",
     "cambio": "Manual",
     "cor": "Prata",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/iLEhunC.jpg",
       "https://i.imgur.com/fsYnVBD.jpg",
@@ -189,7 +189,7 @@
     "combustivel": "Flex",
     "cambio": "Automático",
     "cor": "Azul",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/rNhZ1KH.jpg",
       "https://i.imgur.com/ZlMyAAd.jpg",
