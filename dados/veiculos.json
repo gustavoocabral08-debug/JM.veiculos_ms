@@ -259,25 +259,5 @@
       "https://i.imgur.com/oOLatjQ.jpg"
     ],
     "descricao": "Toyota Corolla GLI 1.8. Bancos de couro, ar condicionado, multimídia, câmbio automático, rodas de liga leve, sensor de estacionamento e câmera de ré. Conforto, economia e excelente revenda."}
-  {
-    "id": 14,
-    "nome": "Corsa Hatch Maxx 1.4 4p.",
-    "marca": "Chevrolet",
-    "ano": 2012,
-    "preco": ,
-    "km": 180000,
-    "combustivel": "Flex",
-    "cambio": "Manual",
-    "cor": "Branco",
-    "status": "disponível",
-    "imagens": [
-      "https://i.imgur.com/JowAWil.jpg",
-      "https://i.imgur.com/16Bn0Qx.jpg",
-      "https://i.imgur.com/lgui7ny.jpg",
-      "https://i.imgur.com/rFpMhqD.jpg",
-      "https://i.imgur.com/XUt5rcW.jpg",
-      "https://i.imgur.com/QUyYmJv.jpg"
-    ],
-    "descricao": "Chevrolet Corsa Hatch Maxx 1.4 4p. – 2012/2012, 180.000 km rodados. Completo com: Air Bag, Alarme, Ar Condicionado, Central Multimídia, Computador de Bordo, Direção Hidráulica, Farol de Neblina, Freios ABS, Limpador e Desembaçador Traseiro, Trava Elétrica, Vidro Elétrico e Volante com Regulagem. Valor: consulte-nos."
-  }
+  
 ]
