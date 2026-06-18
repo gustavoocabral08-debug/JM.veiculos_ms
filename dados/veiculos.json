@@ -30,7 +30,7 @@
     "combustivel": "Diesel",
     "cambio": "Automático",
     "cor": "Preta",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/d5j0agG.jpg",
       "https://i.imgur.com/QwHxcfB.jpg",
@@ -321,5 +321,26 @@
       "https://i.imgur.com/fOJvnla.jpg"
     ],
     "descricao": "Completo com: Air Bag, Alarme, Ar Condicionado, Computador de Bordo, Direção Elétrica, Freios ABS, Isofix, Limpador e Desembaçador Traseiro, Trava Elétrica, Vidro Elétrico e Volante com Regulagem."
+  },
+  {
+    "id": 17,
+    "nome": "Gol Comfortline 1.0 4p.",
+    "marca": "Volkswagen",
+    "ano": 2015,
+    "preco": 0,
+    "km": 110000,
+    "combustivel": "Flex",
+    "cambio": "Manual",
+    "cor": "Branca",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/HYf664g.jpg",
+      "https://i.imgur.com/1XWtw4k.jpg",
+      "https://i.imgur.com/apU6LgJ.jpg",
+      "https://i.imgur.com/63kzdKU.jpg",
+      "https://i.imgur.com/SWM0Hy0.jpg",
+      "https://i.imgur.com/xGQxHpE.jpg"
+    ],
+    "descricao": "Completo com: Air Bag, Alarme, Ar Condicionado, Ar Quente, Assistente de Estacionamento, Central Multimídia, Computador de Bordo, Direção Hidráulica, Engate/Rabicho, Farol de Neblina, Freios ABS, Isofix, Limpador e Desembaçador Traseiro, Repetidor Seta Retrovisor, Retrovisor Elétrico, Rodas de Liga Leve, Sensor de Estacionamento, Trava Elétrica, Vidro Elétrico, Volante com Regulagem e Volante Multifuncional. Valor: consulte-nos."
   }
 ]
