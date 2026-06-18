@@ -279,5 +279,47 @@
       "https://i.imgur.com/QUyYmJv.jpg"
     ],
     "descricao": "Chevrolet Corsa Hatch Maxx 1.4 4p. – 2012/2012, 180.000 km rodados. Completo com: Air Bag, Alarme, Ar Condicionado, Central Multimídia, Computador de Bordo, Direção Hidráulica, Farol de Neblina, Freios ABS, Limpador e Desembaçador Traseiro, Trava Elétrica, Vidro Elétrico e Volante com Regulagem. Valor: consulte-nos."
+  },
+  {
+    "id": 15,
+    "nome": "Strada Working 1.4 C.S.",
+    "marca": "Fiat",
+    "ano": 2012,
+    "preco": 31000,
+    "km": 180000,
+    "combustivel": "Flex",
+    "cambio": "Manual",
+    "cor": "Prata",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/xKItmac.jpg",
+      "https://i.imgur.com/DPdtZfj.jpg",
+      "https://i.imgur.com/GpnAb29.jpg",
+      "https://i.imgur.com/wtSlri5.jpg",
+      "https://i.imgur.com/AXJj4u5.jpg",
+      "https://i.imgur.com/tA1hkrV.jpg"
+    ],
+    "descricao": "Completa com: Air Bag, Alarme, Ar Condicionado, Direção Hidráulica, Engate/Rabicho, Freios ABS, Trava Elétrica, Vidro Elétrico e Volante com Regulagem."
+  },
+  {
+    "id": 16,
+    "nome": "Kwid Zen 1.0 12v",
+    "marca": "Renault",
+    "ano": 2018,
+    "preco": 38000,
+    "km": 101000,
+    "combustivel": "Flex",
+    "cambio": "Manual",
+    "cor": "Preta",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/KrL6L7L.jpg",
+      "https://i.imgur.com/KFEURdh.jpg",
+      "https://i.imgur.com/Gxo9cpA.jpg",
+      "https://i.imgur.com/jFCkrQi.jpg",
+      "https://i.imgur.com/9WdrQPB.jpg",
+      "https://i.imgur.com/fOJvnla.jpg"
+    ],
+    "descricao": "Completo com: Air Bag, Alarme, Ar Condicionado, Computador de Bordo, Direção Elétrica, Freios ABS, Isofix, Limpador e Desembaçador Traseiro, Trava Elétrica, Vidro Elétrico e Volante com Regulagem."
   }
 ]
