@@ -249,7 +249,7 @@
     "combustivel": "Flex",
     "cambio": "Automático",
     "cor": "Prata",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/lX91en9.jpg",
       "https://i.imgur.com/9tx3RRx.jpg",
@@ -342,5 +342,48 @@
       "https://i.imgur.com/xGQxHpE.jpg"
     ],
     "descricao": "Completo com: Air Bag, Alarme, Ar Condicionado, Ar Quente, Assistente de Estacionamento, Central Multimídia, Computador de Bordo, Direção Hidráulica, Engate/Rabicho, Farol de Neblina, Freios ABS, Isofix, Limpador e Desembaçador Traseiro, Repetidor Seta Retrovisor, Retrovisor Elétrico, Rodas de Liga Leve, Sensor de Estacionamento, Trava Elétrica, Vidro Elétrico, Volante com Regulagem e Volante Multifuncional. Valor: consulte-nos."
+  },
+  {
+    "id": 18,
+    "nome": "EcoSport Freestyle 1.6 16v",
+    "marca": "Ford",
+    "ano": 2013,
+    "preco": 50000,
+    "km": 140000,
+    "combustivel": "Flex",
+    "cambio": "Manual",
+    "cor": "Branca",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/Np9uU0r.jpg",
+      "https://i.imgur.com/5IJ0Hy1.jpg",
+      "https://i.imgur.com/k7ror8Q.jpg",
+      "https://i.imgur.com/s9NoEpR.jpg",
+      "https://i.imgur.com/NNZTBBi.jpg",
+      "https://i.imgur.com/AsY0UUC.jpg",
+      "https://i.imgur.com/SClHu4z.jpg",
+      "https://i.imgur.com/bF2vAFj.jpg",
+      "https://i.imgur.com/68cenPd.jpg"
+    ],
+    "descricao": "Completo com: Motor 1.6, Air Bag, Alarme, Apoio de Braço Central, Ar Condicionado, Ar Quente, Assistente de Estacionamento, Computador de Bordo, Controle de Estabilidade ESP, Direção Hidráulica, Farol de LED, Farol de Neblina, Freios ABS, Isofix, Limpador e Desembaçador Traseiro, Luz Diurna, Repetidor Seta Retrovisor, Retrovisor Elétrico, Rodas de Liga Leve, Sensor de Estacionamento, Trava Elétrica, Vidro Elétrico, Volante com Regulagem e Volante Multifuncional."
+  },
+  {
+    "id": 19,
+    "nome": "Biz 125i EX",
+    "marca": "Honda",
+    "ano": 2012,
+    "preco": 11900,
+    "km": 3200,
+    "combustivel": "Flex",
+    "cambio": "Manual",
+    "cor": "Cinza",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/327l0wz.jpg",
+      "https://i.imgur.com/QYllvZx.jpg",
+      "https://i.imgur.com/LsiYFII.jpg",
+      "https://i.imgur.com/X3jJwYM.jpg"
+    ],
+    "descricao": "Equipada com: Freios ABS, Injeção Eletrônica e Partida Elétrica. Moto econômica, muito conservada e com baixíssima quilometragem."
   }
 ]
