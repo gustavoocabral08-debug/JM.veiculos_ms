@@ -152,7 +152,7 @@
     "combustivel": "Flex",
     "cambio": "Manual",
     "cor": "Branco",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/goWFDDA.jpg",
       "https://i.imgur.com/8F9bPly.jpg",
@@ -209,7 +209,7 @@
     "combustivel": "Flex",
     "cambio": "Manual",
     "cor": "Branco",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/3z81wM8.jpg",
       "https://i.imgur.com/Sla9egN.jpg",
@@ -384,5 +384,26 @@
       "https://i.imgur.com/X3jJwYM.jpg"
     ],
     "descricao": "Equipada com: Freios ABS, Injeção Eletrônica e Partida Elétrica. Moto econômica, muito conservada e com baixíssima quilometragem."
+  },
+  {
+    "id": 20,
+    "nome": "Biz 110i",
+    "marca": "Honda",
+    "ano": 2023,
+    "preco": 0,
+    "km": 21000,
+    "combustivel": "Gasolina",
+    "cambio": "Manual",
+    "cor": "Branca",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/z7NBDIr.jpg",
+      "https://i.imgur.com/1ZInvlc.jpg",
+      "https://i.imgur.com/XgfvbdJ.jpg",
+      "https://i.imgur.com/28lEfBV.jpg",
+      "https://i.imgur.com/7WHXy9a.jpg",
+      "https://i.imgur.com/m7St97R.jpg"
+    ],
+    "descricao": "Equipada com: Alarme, Farol de LED, Freios ABS, Injeção Eletrônica, Partida Elétrica e Protetor de Motor. Moto econômica e muito bem conservada. Valor: consulte-nos."
   }
 ]
