@@ -290,7 +290,7 @@
     "combustivel": "Flex",
     "cambio": "Manual",
     "cor": "Prata",
-    "status": "disponível",
+    "status": "vendido",
     "imagens": [
       "https://i.imgur.com/xKItmac.jpg",
       "https://i.imgur.com/DPdtZfj.jpg",
@@ -405,5 +405,44 @@
       "https://i.imgur.com/m7St97R.jpg"
     ],
     "descricao": "Equipada com: Alarme, Farol de LED, Freios ABS, Injeção Eletrônica, Partida Elétrica e Protetor de Motor. Moto econômica e muito bem conservada. Valor: consulte-nos."
+  },
+  {
+    "id": 21,
+    "nome": "Fox Trendline 1.6 4p.",
+    "marca": "Volkswagen",
+    "ano": 2015,
+    "preco": 46900,
+    "km": 120000,
+    "combustivel": "Flex",
+    "cambio": "Manual",
+    "cor": "Branca",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/wetrWJm.jpg",
+      "https://i.imgur.com/MDDNIU0.jpg",
+      "https://i.imgur.com/R96YPJL.jpg",
+      "https://i.imgur.com/5yKPL4C.jpg",
+      "https://i.imgur.com/31RogoS.jpg"
+    ],
+    "descricao": "Completo com: Air Bag, Alarme, Ar Condicionado, Ar Quente, Central Multimídia, Computador de Bordo, Desembaçador Traseiro, Direção Hidráulica, Farol de Neblina, Freios ABS, Isofix, Limpador e Desembaçador Traseiro, Repetidor Seta Retrovisor, Retrovisor Elétrico, Sensor de Estacionamento, Trava Elétrica, Vidro Elétrico, Volante com Regulagem e Volante Multifuncional."
+  },
+  {
+    "id": 22,
+    "nome": "CG Titan 150 KS",
+    "marca": "Honda",
+    "ano": 2008,
+    "preco": 8000,
+    "km": 80000,
+    "combustivel": "Gasolina",
+    "cambio": "Manual",
+    "cor": "Vermelha",
+    "status": "disponível",
+    "imagens": [
+      "https://i.imgur.com/NcxWs68.jpg",
+      "https://i.imgur.com/kOgifj7.jpg",
+      "https://i.imgur.com/PkFUn7Z.jpg",
+      "https://i.imgur.com/mUwPPFG.jpg"
+    ],
+    "descricao": "Moto robusta, econômica e de excelente manutenção."
   }
 ]
